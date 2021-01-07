@@ -1,0 +1,58 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "ITonCloud Managed Services"
+        },
+        "mspOfferDescription": {
+            "value": "Build, Manage and maintain ITonCloud managed services on Azure"
+        },
+        "managedByTenantId": {
+            "value": "fae89514-d7bd-4970-a6d1-d5eb029833d0"
+        },
+        "authorizations": {
+            "value": [
+
+                {
+                    "principalId": "895c1909-2894-4c11-b011-989c5f1876c1", 
+                    "principalIdDisplayName": "IToC Infrastructure Team",
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+                },
+                {
+                    "principalId": "895c1909-2894-4c11-b011-989c5f1876c1", 
+                    "principalIdDisplayName": "IToC Infrastructure Team",
+                    "roleDefinitionId": "36243c78-bf99-498c-9df9-86d9f8d28608"
+                },
+                { 
+                    "principalId": "895c1909-2894-4c11-b011-989c5f1876c1", 
+                    "principalIdDisplayName": "IToC Infrastructure Team",
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46"
+                },
+                { 
+                    "principalId": "c1da4d71-6cc1-4c0c-9fd9-88105369eca9", 
+                    "principalIdDisplayName": "IToC Billing Team",
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
+                }, 
+                {
+                    "principalId": "36a40353-8bba-4f35-8418-9ebdfaaf85c2",
+                    "principalIdDisplayName": "IToC Support Team",
+                    "roleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                    "delegatedRoleDefinitionIds": [
+                        "b24988ac-6180-42a0-ab88-20f7382dd24c",
+                        "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+                    ]
+                },
+                {
+                    "principalId": "895c1909-2894-4c11-b011-989c5f1876c1",
+                    "principalIdDisplayName": "IToC Infrastructure Team",
+                    "roleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+                    "delegatedRoleDefinitionIds": [
+                        "b24988ac-6180-42a0-ab88-20f7382dd24c",
+                        "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
+                    ]
+                }
+                    ]
+                }                
+        }
+}
